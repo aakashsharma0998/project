@@ -1,4 +1,4 @@
-let dbConnection = require("./../config/db.config");
+let dbConnection = require("./db.config");
 let sequelize = require("sequelize");
 let Products = dbConnection.define(
   "products",
