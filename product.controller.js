@@ -1,5 +1,5 @@
-let Products = require("./../model/product");
-let dbConnection = require("./../config/db.config");
+let Products = require("./product");
+let dbConnection = require("./db.config");
 
 let getAllProducts = async (req, res, next) => {
   let products = await Products.findAll();

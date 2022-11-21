@@ -1,5 +1,5 @@
-let Categories = require("./../model/category");
-let sequelizeInstance = require("./../config/db.config");
+let Categories = require("./category");
+let sequelizeInstance = require("./db.config");
 let express = require("express");
 let expressApp = express();
 let bodyParser = require("body-parser");

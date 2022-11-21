@@ -1,8 +1,9 @@
-let serverConfig = require("./config/server.config");
+let serverConfig = require("./server.Config");
 let express = require("express");
-const router = require("./routes/index");
-let categoryRouter = require();
-let productRouter = require();
+const router = require("./index");
+let bodyParser = require("body-parser");
+let categoryRouter = require("./categories.route");
+let productRouter = require("./products.route");
 let expressApp = express();
 expressApp.use(bodyParser.json());
 expressApp.use(router);

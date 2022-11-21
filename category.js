@@ -1,5 +1,5 @@
 let sequelize = require("sequelize");
-let dbConnection = require("./../config/db.config");
+let dbConnection = require("./db.config");
 let categoryModel = dbConnection.define("categories", {
   id: {
     primaryKey: true,
